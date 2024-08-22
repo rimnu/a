@@ -26,8 +26,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local GlassLandTab = Window:CreateTab("GlassLand", nil) -- Title, Image
-local Section = GlassLandTab:CreateSection("GlassLand")
+local initial islandTab = Window:CreateTab("initial island", nil) -- Title, Image
+local Section = initial islandTab:CreateSection("initial island")
 
 Rayfield:Notify({
    Title = "Notification Title",
@@ -43,6 +43,29 @@ Rayfield:Notify({
    },
 },
 })
+
+local Button = initial islandTab:CreateButton({
+   Name = "初期島",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-167.2772216796875, 166.15438842773438, -2038.4246826171875)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = initial islandTab:CreateButton({
+   Name = "テレポート",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-167.12506103515625, 168.44639587402344, -2079.606201171875)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local GlassLandTab = Window:CreateTab("GlassLand", nil) -- Title, Image
+local Section = GlassLandTab:CreateSection("GlassLand")
 
 local Button = GlassLandTab:CreateButton({
    Name = "ステージ1",
@@ -458,7 +481,6 @@ if _G.infinJumpStarted == nil then
 end
    end,
 })
-
 
 local Slider = MiscTab:CreateSlider({
    Name = "Jump Power",
