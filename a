@@ -1,0 +1,482 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "ロブ好きオビーGPスクリプト",
+   LoadingTitle = "rimunhub",
+   LoadingSubtitle = "by rimun",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local GlassLandTab = Window:CreateTab("GlassLand", nil) -- Title, Image
+local Section = GlassLandTab:CreateSection("GlassLand")
+
+Rayfield:Notify({
+   Title = "Notification Title",
+   Content = "very good gui",
+   Duration = 3.5,
+   Image = nil,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ1",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-14.4999695, -12.5, 14.8000002, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ2",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-14.4999695, -12.5, 335.700012, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ3",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-14.4999695, -12.5, 967, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ4",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-14.4999695, -153.5, 1372.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ5",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-812.887024, -153.733871, 1425.54028, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ6",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-1264.78699, -111.233879, 1425.54028, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ7",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-2154.22241, 168.566132, 1425.95166, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ8",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-2394.42236, 440.366119, 1428.15161, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ9",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-3182.62256, 441.466156, 1426.95166, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "ステージ10",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-3747.02246, 132.866135, 1424.25171, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = GlassLandTab:CreateButton({
+   Name = "クリア",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-4508.50781, 110.5, 5221.22021, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local cityTab = Window:CreateTab("city", nil) -- Title, Image
+local Section = cityTab:CreateSection("city")
+
+local Button = cityTab:CreateButton({
+   Name = "ステージ1",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(3381.86011, 98.740921, -3858.01196, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = cityTab:CreateButton({
+   Name = "ステージ2",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(2799.3623, 98.1592865, -3852.42407, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = cityTab:CreateButton({
+   Name = "ステージ3",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(2489.61279, 98.1592865, -3927.22412, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = cityTab:CreateButton({
+   Name = "ステージ4",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1556.90967, 73.5409241, -3896.69189, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = cityTab:CreateButton({
+   Name = "ステージ5",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(2003.51184, 33.959301, -4260.29004, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = cityTab:CreateButton({
+   Name = "クリア",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1481.01196, 91.1592865, -4797.31299, 0.965929627, 0, 0.258804798, 0, 1, 0, -0.258804798, 0, 0.965929627)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local shop coinTab = Window:CreateTab("shop coin", nil) -- Title, Image
+    local Section = shop coinTab:CreateSection("shop coin")
+
+    local Button = shop coinTab:CreateButton({
+   Name = "noob shop",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1461.6908, 64.3595505, -4789.62305, 0.157534346, -0.184514195, 0.970122397, -1.61826611e-05, 0.982388496, 0.186849803, -0.987513542, -0.029450953, 0.154756933)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "bacon shop",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1755.31005859375, 65.03430938720703, -4864.59765625)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン1",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1707.53333, 70.382576, -4987.67188, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン2",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1750.1333, 76.0825729, -5021.27197, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン3",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1667.53308, 78.6642838, -5105.62012, 0.90629667, 0, 0.422642082, 0, 1, 0, -0.422642082, 0, 0.90629667)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン4",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1644.52063, 108.220757, -5151.40723, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン5",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1775.63318, 79.0142746, -5139.26758, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン6",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1782.49304, 80.2142715, -5052.06738, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = shop coinTab:CreateButton({
+   Name = "コイン7",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1784.73315, 114.064178, -4983.91992, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local characterTab = Window:CreateTab("character", nil) -- Title, Image
+local Section = characterTab:CreateSection("character")
+
+local Button = characterTab:CreateButton({
+   Name = "まくぎー",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1790.66772, 53.3898659, -4460.87939, -0.0693269968, 0.00729883835, -0.997567296, 0.104541227, 0.994520545, 1.13397837e-05, 0.992101312, -0.104286119, -0.0697102547)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "すそぽけ",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new()
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "かざね",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(1562.81396, 76.1523743, -3679.45703, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "あおろぶ",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(3594.71582, 157.415314, -3864.55493, 0.0522800684, -0, -0.998632431, 0, 1, -0, 0.998632431, 0, 0.0522800684)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "いずっち",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(3526.37476, 103.194908, -4337.97363, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "こじま",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(2116.27271, 107.901047, -3798.00977, 0.967201948, 0, 0.25400874, 0, 1, 0, -0.25400874, 0, 0.967201948)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "ゆっくりマクラ",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new()
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "スープ",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new()
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "そばかす",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-2891.44092, 120.154266, 1076.39502, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "soutan",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-6137.67041, 124.026718, 3800.92676, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "そば好き",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(-255.456909, -164.944443, 1399.54407, -0.939700961, 0, 0.341998369, 0, 1, 0, -0.341998369, 0, -0.939700961)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "tah",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(3855.11816, 67.6684113, -4195.25391, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local Button = characterTab:CreateButton({
+   Name = "mint",
+   Callback = function()
+        local player = game.Players.LocalPlayer
+local teleportLocation = Vector3.new(3835, 1.00000072, -4453, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+player.Character.HumanoidRootPart.CFrame = CFrame.new(teleportLocation)
+   end,
+})
+
+local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
+local Section = MiscTab:CreateSection("Misc")
+
+local Button = MiscTab:CreateButton({
+   Name = "inf jump",
+   Callback = function()
+       --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+    --Ensures this only runs once to save resources
+    _G.infinJumpStarted = true
+    
+    --Notifies readiness
+    game.StarterGui:SetCore("SendNotification", {Title="rimun hub"; Text="Infinite Jump Activated!"; Duration=5;})
+
+    --The actual infinite jump
+    local plr = game:GetService('Players').LocalPlayer
+    local m = plr:GetMouse()
+    m.KeyDown:connect(function(k)
+        if _G.infinjump then
+            if k:byte() == 32 then
+            humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+            humanoid:ChangeState('Jumping')
+            wait()
+            humanoid:ChangeState('Seated')
+            end
+        end
+    end)
+end
+   end,
+})
+
+
+local Slider = MiscTab:CreateSlider({
+   Name = "Jump Power",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+})
+
+local Input = MiscTab:CreateInput({
+   Name = "Walkspeed",
+   PlaceholderText = "1-500",
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Text)
+   end,
+})
